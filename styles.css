@@ -1,0 +1,154 @@
+:root {
+    --light-blue: #D7E0FF;
+    --dark-blue: #1E213f;
+    --darker-blue: #161932;
+    --orange: #F87070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-blue);
+    
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 15px;
+  }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Navigation Section */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.title {
+    color: var(--light-blue);
+    margin-bottom: 40px;
+}
+
+.selector {
+    background-color: var(--darker-blue);
+    color: var(--light-blue);
+    width: 373px;
+    height: 63px;
+    border-radius: 31.5px;
+    align-items: center;
+    margin-bottom: 40px;
+    z-index: -1;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.selector__items {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.choose {
+    opacity: 0.6;
+}
+
+.selected {
+    border-radius: 26.5px;
+    height: 48px;
+    width: calc(95% / 3);
+    background-color: var(--orange);
+    margin-top: -55px;
+}
+
+/* Timer Section */
+
+.pomo__timer {
+    margin-top: 40px;;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.outer__circle {
+    width: 410px;
+    height: 410px;
+    display: flex;
+    border-radius: 50%;
+    background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+    box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;
+}
+
+.inner__circle {
+    width: 366px;
+    height: 366px;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    background: var(--darker-blue)
+}
+
+#ring {
+    margin: auto;
+    width: 339px;
+    height: 339px;
+  }
+
+#ring > circle {
+    stroke: var(--orange);
+    stroke-width: 10;
+    fill: transparent;
+ 
+  }
+
+  .text__circle {
+      height: 410px;
+      width: 410px;
+      position: absolute;
+    }
+
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-blue);
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    font-weight: bold;
+  }
+
+  .push {
+    color: var(--light-blue);
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .settings {
+      margin-top: 80px;
+      text-align: center;
+      cursor: pointer;
+  }
